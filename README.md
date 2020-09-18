@@ -23,9 +23,9 @@ If they do not match, the VersionsToKeep number is overwritten with
              for example, if the default VersionsToKeep setting is 5, and an item has 12 versons in master, but the latest published version is version 7,
              then, the script will keep (5 + (12-7)) = 10 versions and only prune the oldest 2
 
-**LiveContentDatabase** - this should define the database where the live content lives in order to look up the published items' version
+  **LiveContentDatabase** - this should define the database where the live content lives in order to look up the published items' version
 
-**ContentRoots** - defines the roots at which the script processing would start
+  **ContentRoots** - defines the roots at which the script processing would start
 
 ### Exclusion settings
 
@@ -33,13 +33,13 @@ Children of the global settings item, of template Version Pruner Exclusion Setti
 
 Each exclusion settings can define:
 
-**Nodes** - which items the exclusion settings apply to [Shared field]
+  **Nodes** - which items the exclusion settings apply to [Shared field]
 
-**IncludeChildren** - whether or not the exclusion settings should apply to descendants of the selected Nodes [Shared field]
+  **IncludeChildren** - whether or not the exclusion settings should apply to descendants of the selected Nodes [Shared field]
 
-**DisablePruning** - if checked, the defined items will not be pruned [this setting can vary per language]
+  **DisablePruning** - if checked, the defined items will not be pruned [this setting can vary per language]
 
-**VersionsToKeep** - an override for the default VersionsToKeep setting that will apply to the defined items [this setting can vary per language]
+  **VersionsToKeep** - an override for the default VersionsToKeep setting that will apply to the defined items [this setting can vary per language]
 
 ### Scheduled task
 
@@ -61,6 +61,6 @@ ItemVersionPruner.zip
 
 Contents:
 
-templates under /sitecore/templates/Feature/Item Version Pruner
-SPE module under /sitecore/system/Modules/PowerShell/Script Library/Carnival/Item Version Pruner
-settings items under /sitecore/system/Settings/Feature/Item Version Pruner
+  templates under /sitecore/templates/Feature/Item Version Pruner
+  SPE module under /sitecore/system/Modules/PowerShell/Script Library/Carnival/Item Version Pruner
+  settings items under /sitecore/system/Settings/Feature/Item Version Pruner
