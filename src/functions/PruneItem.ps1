@@ -37,16 +37,8 @@ function PruneItem()
                 WriteMessage("Serializing item to data folder path.")
                 $item | Serialize-Item -Target $backupFolder -ItemPathsAbsolute 
             }
-            
-            New-UsingBlock (New-Object Sitecore.Data.BulkUpdateContext) {
-                New-UsingBlock (New-Object Sitecore.SecurityModel.SecurityDisabler) {
-                    New-UsingBlock (New-Object Sitecore.Data.DatabaseCacheDisabler) {
-                        New-UsingBlock (New-Object Sitecore.Data.Events.EventDisabler) {
-                            Remove-ItemVersion -Item $item -Language $item.Language.Name -MaxRecentVersions $versionsToKeep -Permanently
-                        }
-                    }
-                }
-            }
+           
+            Remove-ItemVersion -Item $item -Language $item.Language.Name -MaxRecentVersions $versionsToKeep -Permanently
             WriteMessage("Pruned: $($item.Paths.FullPath), language $($item.Language.Name). Versions kept: $($versionsToKeep)")
         }
     }
