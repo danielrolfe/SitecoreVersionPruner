@@ -42,7 +42,12 @@ Each exclusion settings can define:
 
 **VersionsToKeep** - an override for the default VersionsToKeep setting that will apply to the defined items [this setting can vary per language]
 
+Item structure of settings and exclusions:
+
 ![Version Pruner Root Settings](/documentation/images/VersionPrunerSettingsFolderStructure.png)
+
+Child Exclusion Settings:
+
 ![Version Pruner Root Settings](/documentation/images/VersionPrunerExclusionSettings.png)
 
 ### Scheduled task
