@@ -26,6 +26,8 @@ If they do not match, the VersionsToKeep number is overwritten with default Vers
 
 **SavePrunedItemsToFolder** - When checked will cause all versions pruned to be saved to a folder on the CM. This can be used to restored the pruned versions.
 
+[Version Pruner Root Settings](https://raw.githubusercontent.com/danielrolfe/SitecoreVersionPruner/master/documentation/images/VersionPrunerRootSettings.png?token=AAVCFQPEU2Y3LEF4IT2O5FK7OI7UY)
+
 ### Exclusion settings
 
 Children of the global settings item, of template Version Pruner Exclusion Setting
