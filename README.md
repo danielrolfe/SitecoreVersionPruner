@@ -24,6 +24,8 @@ If they do not match, the VersionsToKeep number is overwritten with default Vers
 
 **ContentRoots** - defines the roots at which the script processing would start
 
+**SavePrunedItemsToFolder** - When checked will cause all versions pruned to be saved to a folder on the CM. This can be used to restored the pruned versions.
+
 ### Exclusion settings
 
 Children of the global settings item, of template Version Pruner Exclusion Setting
