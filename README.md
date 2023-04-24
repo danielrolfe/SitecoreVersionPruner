@@ -63,13 +63,3 @@ The task is configured to run a Powershell Sript Command and run the /sitecore/s
 Any pruned items get serialized and backed up to a serialization folder in a[SitecoreDataFolder]\ItemVerisonPruner\[MMddyyyyTHHmmss] folder
 
 Each script run creates a new timestamped folder, so this process will eventually need a cleanup job to remove old backup folders
-
-## Installation Packages
-
-ItemVersionPruner.zip
-
-Contents:
-
-  templates under /sitecore/templates/Feature/Item Version Pruner
-  SPE module under /sitecore/system/Modules/PowerShell/Script Library/Carnival/Item Version Pruner
-  settings items under /sitecore/system/Settings/Feature/Item Version Pruner
